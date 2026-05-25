@@ -1,26 +1,56 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Your exact logo colors */
+  --color-brand-primary: #0d47a1;
+  --color-brand-secondary: #ff6d00;
+  --color-brand-accent: #d32f2f;
+  --color-brand-gold: #ffc107;
+  --color-brand-ocean: #4fc3f7;
+  --color-brand-dark: #0a1628;
+
+  /* UI colors */
+  --color-brand-light: #f8fafc;
+  --color-brand-muted: #64748b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-white text-brand-dark antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-brand-dark;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 1280px;
+  }
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  .btn-primary {
+    @apply bg-brand-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-brand-primary/90 transition;
+  }
+  .btn-secondary {
+    @apply bg-brand-secondary text-white px-6 py-2.5 rounded-lg font-medium hover:opacity-90 transition;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-primary text-brand-primary px-6 py-2.5 rounded-lg font-medium hover:bg-brand-primary hover:text-white transition;
+  }
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/10;
+  }
+  .glass-dark {
+    @apply bg-brand-dark/80 backdrop-blur-md border border-white/5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
