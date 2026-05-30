@@ -77,7 +77,7 @@ export default function Navbar() {
                                      alt="" className="rounded-full"/>
                             </motion.div>
                             <span className="text-white font-extrabold text-xl tracking-tight bg-clip-text group-hover:text-brand-gold transition-colors duration-300">
-                                EHCDT
+                                EKID
                             </span>
                         </Link>
 
@@ -184,7 +184,7 @@ export default function Navbar() {
                             transition={{ delay: 0.4 }}
                             className="space-y-8"
                         >
-                            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/contact    " onClick={() => setIsMobileMenuOpen(false)}>
                                 <motion.button
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-brand-secondary text-white py-4 rounded-full font-bold uppercase tracking-wider text-sm shadow-xl shadow-brand-secondary/20"
