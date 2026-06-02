@@ -4,10 +4,10 @@ import { motion } from 'framer-motion'
 
 export default function Stats() {
     const stats = [
-        { number: '150+', label: 'Completed Projects' },
-        { number: '100+', label: 'Team Members' },
-        { number: '200+', label: 'Happy Clients' },
-        { number: '30', label: 'Awards Won' },
+        { number: '391', label: 'Total Beneficiaries' },
+        { number: '7', label: 'Board of Trustees' },
+        { number: '10', label: 'Management Committee' },
+        { number: '4', label: 'Advisory Committee' },
     ]
 
     return (

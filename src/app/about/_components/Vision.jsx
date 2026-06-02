@@ -5,8 +5,10 @@ import Image from 'next/image'
 
 export default function Vision() {
     const items = [
-        'Inspiring Modern Architecture',
-        'Pioneering Sustainable Construction',
+        'Sustainable development of Exhdo host communities',
+        'Active participation and ownership by host communities',
+        'Transparent and accountable fund management',
+        'Long-term community empowerment and growth',
     ]
 
     return (
@@ -35,9 +37,10 @@ export default function Vision() {
                         </div>
 
                         <p className="text-lg text-[#64748b] leading-relaxed">
-                            At Renovex, our vision is to redefine the future of construction through innovation,
-                            sustainability, and excellence. We aim to create spaces that not only meet today’s needs
-                            but also inspire communities and empower generations to come.
+                            At EHCDT, our vision is to redefine the future of community development through innovation,
+                            sustainability, and excellence. We aim to create a model of host community development
+                            where the benefits of oil and gas operations are fully realized by the communities that host them,
+                            ensuring that every initiative empowers and transforms lives for generations to come.
                         </p>
 
                         <div className="pt-4">
@@ -75,7 +78,7 @@ export default function Vision() {
                         <div className="absolute right-0 top-0 w-[88%] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl z-10 ring-1 ring-white/60">
                             <Image
                                 src="/vision.jpg"
-                                alt="Renovex Vision - Modern Architecture"
+                                alt="EHCDT Vision - Community Development"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"
                             />
@@ -86,7 +89,7 @@ export default function Vision() {
                         <div className="absolute left-8 bottom-12 w-[58%] aspect-square rounded-3xl overflow-hidden shadow-xl z-20 border-[10px] border-white">
                             <Image
                                 src="/child.jpg"
-                                alt="Renovex Community Impact"
+                                alt="EHCDT Community Impact"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"
                             />

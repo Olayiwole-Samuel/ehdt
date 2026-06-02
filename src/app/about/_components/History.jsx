@@ -3,14 +3,14 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Clock3, Trophy, ShieldCheck, Sparkles } from 'lucide-react'
+import { Clock3, Trophy, ShieldCheck, Sparkles, Calendar, Users } from 'lucide-react'
 
 export default function History() {
     const items = [
-        'Humble Beginnings',
-        'Milestones and Achievements',
-        'Building a Legacy of Trust',
-        'Shaping the Future, Rooted in the Past',
+        'Incorporation & Registration (27th Sept 2023)',
+        'Inauguration of Board of Trustees (19th Oct 2023)',
+        'Seamless Transition from MoU to PIA Implementation',
+        'Building a Legacy of Trust & Sustainable Development',
     ]
 
     return (
@@ -118,19 +118,27 @@ export default function History() {
                             , Driven By Impact
                         </h2>
 
-                        {/* Paragraph */}
+                        {/* Paragraph - Updated with key historical facts */}
                         <p className="mt-5 text-lg leading-relaxed text-[#64748b] max-w-2xl">
-                            Founded on a commitment to innovation, sustainability, and transformation, EHCDT began as a small initiative dedicated to uplifting communities. Over the years, we have evolved into a trusted organization known for creating meaningful and lasting impact.
+                            The Exhdo Host Community Development Trust (EHCDT) was incorporated with the Corporate Affairs Commission (CAC) on <strong>27th September 2023</strong> with registration number <strong>7153605</strong>. The Trust is funded by <strong>Frontier Oil Limited (FOL)</strong> and <strong>Savannah Uquo Gas Limited (SEUGL)</strong> — the settlers in PML 10.
                         </p>
 
-                        {/* Timeline Style Points */}
+                        <p className="mt-4 text-lg leading-relaxed text-[#64748b] max-w-2xl">
+                            The Trust's seven (7) member Board of Trustees (BoT) was inaugurated on <strong>19th October 2023</strong> in accordance with the Petroleum Industry Act (PIA) 2021. The Trust aims to manage and administer funds contributed by the two settlers operating in the Exhdo host communities, for the benefit and sustainable development of the communities.
+                        </p>
+
+                        <p className="mt-4 text-lg leading-relaxed text-[#64748b] max-w-2xl">
+                            There was a seamless transition from the MoU era to the implementation of the PIA, made possible by the fact that the settlers were practicing a Sustainable Community Development model known as the <strong>Community Development Foundation (CDF)</strong> before the enactment of the PIA 2021 — similar to the Host Community Development Trust enshrined in Chapter Three (3) of the PIA 2021.
+                        </p>
+
+                        {/* Timeline Style Points - Updated with specific milestones */}
                         <div className="mt-10 relative">
                             {/* Vertical Line */}
                             <div className="absolute left-6 top-0 bottom-0 w-px bg-[#e2e8f0]" />
 
                             <div className="space-y-6">
                                 {items.map((item, index) => {
-                                    const icons = [Clock3, Trophy, ShieldCheck, Sparkles]
+                                    const icons = [Calendar, Users, Trophy, Sparkles]
                                     const Icon = icons[index]
 
                                     return (

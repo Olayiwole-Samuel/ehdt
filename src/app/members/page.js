@@ -30,84 +30,204 @@ const LinkedInSVG = ({ className }) => (
 const memberGroups = [
     {
         id: 'board',
-        title: 'Board of Directors',
+        title: 'Board of Trustees (BoT)',
         icon: Users,
         description:
-            "The strategic leadership team guiding EHCDT's vision and mission.",
+            "The 7-member Board of Trustees inaugurated on 19th October 2023 in accordance with the Petroleum Industry Act (PIA) 2021.",
         members: [
             {
-                name: 'Dr. Amina Yusuf',
-                role: 'Chairperson',
-                bio: 'With over 20 years of experience in community development and sustainable projects, Dr. Yusuf leads EHCDT with vision and compassion.',
+                name: 'Dr. Macaulay Akpan',
+                role: 'Chairman',
+                bio: 'Leading the Board of Trustees with extensive experience in community development and strategic governance.',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'amina@ehcdt.org',
+                email: 'macaulay@ehcdt.org',
             },
             {
-                name: 'Mr. Chidi Okafor',
-                role: 'Vice Chairperson',
-                bio: 'A seasoned engineer and community advocate overseeing infrastructure and development projects.',
+                name: 'Mrs. Nelly Ukpong',
+                role: 'Vice Chairman',
+                bio: 'A dedicated community leader serving as Vice Chairman of the Board of Trustees.',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'chidi@ehcdt.org',
+                email: 'nelly@ehcdt.org',
             },
             {
-                name: 'Mrs. Fatima Bello',
+                name: 'Bassey Essien, Esq.',
+                role: 'Member',
+                bio: 'Legal expert and community advocate serving on the Board of Trustees.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'bassey@ehcdt.org',
+            },
+            {
+                name: 'Pastor Ita Umo Udoh',
+                role: 'Member',
+                bio: 'Community leader and spiritual guide serving on the Board of Trustees.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'ita@ehcdt.org',
+            },
+            {
+                name: 'Dr. Umana Sam Umana',
+                role: 'Member',
+                bio: 'Experienced professional serving on the Board of Trustees with a focus on sustainable development.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'umana@ehcdt.org',
+            },
+            {
+                name: 'Yvonne Oluyede, Esq.',
+                role: 'Member',
+                bio: 'Legal professional and community advocate serving on the Board of Trustees.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'yvonne@ehcdt.org',
+            },
+            {
+                name: 'Chief Etukudo Albert Etukudo',
+                role: 'Member',
+                bio: 'Traditional leader and community representative serving on the Board of Trustees.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'etukudo@ehcdt.org',
+            },
+            {
+                name: 'Mr. Sam Atara',
                 role: 'Secretary',
-                bio: 'A dedicated educator managing outreach programs and youth initiatives.',
+                bio: 'Secretary to the Board of Trustees representing Frontier Oil Limited (FOL).',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'fatima@ehcdt.org',
+                email: 'sam@ehcdt.org',
+            },
+        ],
+    },
+    {
+        id: 'management',
+        title: 'Management Committee (MC)',
+        icon: ShieldCheck,
+        description:
+            "The 10-member Management Committee comprising four (4) executive members and six (6) non-executive members.",
+        members: [
+            {
+                name: 'Engr. Moses Ekpe Tobby',
+                role: 'Head M.C. / Project Manager (Executive)',
+                bio: 'Leading the Management Committee and overseeing project implementation across host communities.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'moses@ehcdt.org',
+            },
+            {
+                name: 'Alabamajara Itama Eteakamba Edet',
+                role: 'Accountant (Executive)',
+                bio: 'Managing financial records and ensuring transparency in all transactions.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'alabamajara@ehcdt.org',
+            },
+            {
+                name: 'Godwin Edohouqua Umoh ACA',
+                role: 'Finance Manager (Executive)',
+                bio: 'Overseeing financial planning and management for the Trust.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'godwin@ehcdt.org',
+            },
+            {
+                name: 'Aniefiok Peter Ekwere Esq.',
+                role: 'Legal Officer (Executive)',
+                bio: 'Providing legal guidance and ensuring compliance with all regulations.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'aniefiok@ehcdt.org',
+            },
+            {
+                name: 'Obonganwan (Mrs.) Inyang Victor Akpawan',
+                role: 'Non-Executive Member',
+                bio: 'Community representative bringing grassroots perspectives to the Management Committee.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'obonganwan@ehcdt.org',
+            },
+            {
+                name: 'Pastor Bills Oduok Ene',
+                role: 'Non-Executive Member',
+                bio: 'Community leader serving as a non-executive member of the Management Committee.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'bills@ehcdt.org',
+            },
+            {
+                name: 'Obonganwan (Mrs.) Mariatherese Adiakpan',
+                role: 'Non-Executive Member',
+                bio: 'Community advocate and non-executive member of the Management Committee.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'mariatherese@ehcdt.org',
+            },
+            {
+                name: 'Isaac Ubong Ataudim',
+                role: 'Non-Executive Member',
+                bio: 'Community representative serving as a non-executive member of the Management Committee.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'isaac@ehcdt.org',
+            },
+            {
+                name: 'Hon. David Sam Udo',
+                role: 'Non-Executive Member',
+                bio: 'Community leader and non-executive member of the Management Committee.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'david@ehcdt.org',
+            },
+            {
+                name: 'Emmanuel Akpan Smith, Esq.',
+                role: 'Secretary to M.C.',
+                bio: 'Secretary to the Management Committee, ensuring smooth operations and documentation.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'emmanuel@ehcdt.org',
             },
         ],
     },
     {
         id: 'advisory',
-        title: 'Advisory Committee',
+        title: 'Advisory Committee (AC)',
         icon: Award,
         description:
-            'Experts and thought leaders providing strategic guidance and insights.',
+            "The 4-member Advisory Committee providing strategic guidance and insights to the Trust.",
         members: [
             {
-                name: 'Prof. Oluwole Adebayo',
-                role: 'Advisory Chair',
-                bio: 'A professor of sustainable development with over 30 years of experience.',
+                name: 'Itauma Daniel Etteh',
+                role: 'Non-Executive Member',
+                bio: 'Advisory Committee member providing strategic guidance on community development initiatives.',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'oluwole@ehcdt.org',
+                email: 'itauma@ehcdt.org',
             },
             {
-                name: 'Dr. Grace Okonkwo',
-                role: 'Advisory Member',
-                bio: 'A medical doctor and public health expert advising on healthcare outreach.',
+                name: 'Emem John Ikot',
+                role: 'Non-Executive Member',
+                bio: 'Advisory Committee member with expertise in community engagement and development.',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'grace@ehcdt.org',
-            },
-        ],
-    },
-    {
-        id: 'partners',
-        title: 'Partners & Supporters',
-        icon: Heart,
-        description:
-            'Organizations and individuals partnering with us to amplify impact.',
-        members: [
-            {
-                name: 'Mr. Samuel Ogunlade',
-                role: 'Partner',
-                bio: 'A philanthropist and business leader supporting EHCDT initiatives.',
-                image: '/man.jpg',
-                linkedin: '#',
-                email: 'samuel@ehcdt.org',
+                email: 'emem@ehcdt.org',
             },
             {
-                name: 'Chief David Obiora',
-                role: 'Partner',
-                bio: 'A traditional ruler serving as a bridge between EHCDT and communities.',
+                name: 'Emmanuel Bassey Ntuen',
+                role: 'Non-Executive Member',
+                bio: 'Advisory Committee member contributing to strategic planning and project oversight.',
                 image: '/man.jpg',
                 linkedin: '#',
-                email: 'david@ehcdt.org',
+                email: 'emmanuel.b@ehcdt.org',
+            },
+            {
+                name: 'Emmanuel Jack',
+                role: 'Non-Executive Member',
+                bio: 'Advisory Committee member supporting the Trust with community insights and expertise.',
+                image: '/man.jpg',
+                linkedin: '#',
+                email: 'emmanuel.j@ehcdt.org',
             },
         ],
     },
@@ -122,7 +242,6 @@ export default function MembersPage() {
                 <div className="absolute inset-0">
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#ffc107]/10 rounded-full blur-3xl" />
                     <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#4fc3f7]/10 rounded-full blur-3xl" />
-
                     <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:70px_70px]" />
                 </div>
 
@@ -135,7 +254,7 @@ export default function MembersPage() {
                         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-8">
                             <Sparkles className="w-4 h-4 text-[#ffc107]" />
                             <span className="text-white font-medium text-sm">
-                                Leadership Team
+                                Leadership & Governance
                             </span>
                         </div>
 
@@ -147,28 +266,26 @@ export default function MembersPage() {
                         </h1>
 
                         <p className="mt-8 text-lg lg:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                            Passionate leaders, advisors, and partners working
-                            together to transform communities and create lasting
-                            impact.
+                            Dedicated leaders, managers, and advisors working together to transform communities and create lasting impact.
                         </p>
 
                         {/* Stats */}
                         <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
                             {[
                                 {
-                                    label: 'Team Members',
-                                    value: '20+',
+                                    label: 'Board of Trustees',
+                                    value: '7',
                                     icon: Users,
                                 },
                                 {
-                                    label: 'Projects Completed',
-                                    value: '120+',
+                                    label: 'Management Committee',
+                                    value: '10',
                                     icon: ShieldCheck,
                                 },
                                 {
-                                    label: 'Communities Reached',
-                                    value: '50+',
-                                    icon: Star,
+                                    label: 'Advisory Committee',
+                                    value: '4',
+                                    icon: Award,
                                 },
                             ].map((stat, index) => {
                                 const Icon = stat.icon

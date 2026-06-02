@@ -1,4 +1,3 @@
-// components/Layout/Navbar.jsx
 'use client'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -35,12 +34,11 @@ export default function Navbar() {
         { href: '/contact', label: 'Contact' },
     ]
 
-    // Animation variants for the cascading mobile menu items
     const menuContainerVariants = {
         hidden: { opacity: 0 },
         show: {
             opacity: 1,
-            transition: { stagerChildren: 0.05, delayChildren: 0.1 }
+            transition: { staggerChildren: 0.05, delayChildren: 0.1 }
         }
     }
 
@@ -54,7 +52,7 @@ export default function Navbar() {
             <motion.nav
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} // Ultra smooth custom ease
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
                     scrolled ? 'pt-3' : 'pt-6'
                 }`}
@@ -73,11 +71,10 @@ export default function Navbar() {
                                 whileHover={{ rotate: 10, scale: 1.05 }}
                                 className="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center shadow-lg shadow-brand-gold/20"
                             >
-                                <img src="/logo.png"
-                                     alt="" className="rounded-full"/>
+                                <img src="/logo.png" alt="" className="rounded-full"/>
                             </motion.div>
                             <span className="text-white font-extrabold text-xl tracking-tight bg-clip-text group-hover:text-brand-gold transition-colors duration-300">
-                                EKID
+                                EHCDT
                             </span>
                         </Link>
 
@@ -120,7 +117,6 @@ export default function Navbar() {
                                 </motion.button>
                             </Link>
 
-                            {/* Award-Winning Animated Burger Icon */}
                             <button
                                 className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white/5 border border-white/10 text-white focus:outline-none"
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -137,7 +133,7 @@ export default function Navbar() {
                 </div>
             </motion.nav>
 
-            {/* Premium Full Screen Mobile Menu Overlay */}
+            {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
@@ -146,7 +142,6 @@ export default function Navbar() {
                         exit={{ opacity: 0, backdropFilter: 'blur(0px)' }}
                         className="fixed inset-0 bg-brand-dark/90 z-40 md:hidden flex flex-col justify-between p-8 pt-32"
                     >
-                        {/* Interactive Link Stack */}
                         <motion.div
                             variants={menuContainerVariants}
                             initial="hidden"
@@ -177,14 +172,13 @@ export default function Navbar() {
                             })}
                         </motion.div>
 
-                        {/* Bottom Drawer Footer */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                             className="space-y-8"
                         >
-                            <Link href="/contact    " onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                                 <motion.button
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-brand-secondary text-white py-4 rounded-full font-bold uppercase tracking-wider text-sm shadow-xl shadow-brand-secondary/20"

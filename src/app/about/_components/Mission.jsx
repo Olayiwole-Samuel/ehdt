@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 export default function Mission() {
     const items = [
-        'Fostering Sustainable Growth and Green Development',
-        'Innovating for a Sustainable Future',
-        'Community-Centric Approach',
-        'Building Stronger Communities',
+        'Managing and administering funds for host community development',
+        'Ensuring active participation of host communities in all initiatives',
+        'Implementing the 5-year Community Development Plan (CDP)',
+        'Promoting sustainable development in Eket and Esit Eket communities',
     ]
 
     // Animation presets for premium stagger reveals
@@ -48,7 +48,7 @@ export default function Mission() {
                         >
                             <Image
                                 src="/team.jpg"
-                                alt="Our Mission - Blueprint Architecture Design"
+                                alt="Our Mission - Community Development"
                                 fill
                                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             />
@@ -65,7 +65,7 @@ export default function Mission() {
                         >
                             <Image
                                 src="/outreach.jpg"
-                                alt="Our Mission - Community Outreach Execution"
+                                alt="Our Mission - Community Outreach"
                                 fill
                                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             />
@@ -97,7 +97,7 @@ export default function Mission() {
                             variants={itemVariants}
                             className="text-base sm:text-lg text-[#64748b] font-normal leading-relaxed text-justify"
                         >
-                            To provide exceptional community development services that exceed client expectations through innovation, quality craftsmanship, and a commitment to sustainability. We aim to create spaces that inspire and improve the lives of those in our communities.
+                            To manage and administer funds contributed by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) for the benefit and sustainable development of the Exhdo host communities in Eket and Esit Eket Local Government Areas. We are committed to the active participation of host communities in all initiatives, ensuring that development is community-driven and aligned with the 5-year Community Development Plan (CDP).
                         </motion.p>
 
                         {/* Interactive Premium Checklist */}

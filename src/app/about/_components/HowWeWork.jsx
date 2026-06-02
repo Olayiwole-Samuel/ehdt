@@ -16,7 +16,7 @@ const steps = [
         icon: Search,
         title: 'Discover',
         description:
-            'Understanding community needs through deep research, collaboration, and active listening.',
+            'Understanding community needs through deep research, collaboration, and active listening — guided by the Community Development Foundation (CDF) model.',
         color: '#0d47a1',
         bg: '#e8f0fe',
     },
@@ -24,7 +24,7 @@ const steps = [
         icon: PenTool,
         title: 'Plan',
         description:
-            'Designing tailored solutions that are innovative, sustainable, and future-focused.',
+            'Designing tailored solutions that are innovative, sustainable, and aligned with the Petroleum Industry Act (PIA) 2021 framework.',
         color: '#ff6d00',
         bg: '#fff3e0',
     },
@@ -32,7 +32,7 @@ const steps = [
         icon: Building,
         title: 'Execute',
         description:
-            'Transforming ideas into reality through strategic implementation and teamwork.',
+            'Transforming ideas into reality through strategic implementation, teamwork, and active participation of host communities.',
         color: '#4fc3f7',
         bg: '#e1f5fe',
     },
@@ -40,7 +40,7 @@ const steps = [
         icon: Heart,
         title: 'Impact',
         description:
-            'Creating measurable outcomes that improve lives and strengthen communities.',
+            'Creating measurable outcomes that improve lives, strengthen communities, and ensure sustainable development for future generations.',
         color: '#ffc107',
         bg: '#fff8e1',
     },
@@ -85,7 +85,7 @@ export default function HowWeWork() {
                     <p className="mt-6 text-lg text-[#64748b] leading-relaxed max-w-3xl mx-auto">
                         A transparent and community-driven approach focused on
                         collaboration, innovation, and creating long-lasting
-                        impact through every stage of development.
+                        impact through every stage of development — guided by the principles of the Petroleum Industry Act (PIA) 2021.
                     </p>
                 </motion.div>
 

@@ -78,25 +78,25 @@ function CountUp({ end, duration = 2000 }) {
 export default function Hero() {
     const stats = [
         {
-            number: '1286',
-            label: 'Lives Impacted',
+            number: '391',
+            label: 'Beneficiaries Reached',
             icon: HeartHandshake,
             sub: 'And counting...',
         },
         {
-            number: '78',
+            number: '6',
             label: 'Programs Delivered',
             icon: BookOpen,
             sub: 'Growing daily...',
         },
         {
-            number: '548',
-            label: 'Volunteers',
+            number: '21',
+            label: 'Leadership Team',
             icon: Users,
-            sub: 'Still rising...',
+            sub: 'Dedicated professionals',
         },
         {
-            number: '26',
+            number: '2',
             label: 'Communities Reached',
             icon: Globe2,
             sub: 'Expanding more...',
@@ -151,9 +151,7 @@ export default function Hero() {
                                     transition={{ duration: 0.9 }}
                                     className="mt-8 text-lg leading-relaxed text-[#64748b] max-w-xl"
                                 >
-                                    EHCDT is committed to transforming communities through compassion,
-                                    education, faith, and sustainable development. Together, we create
-                                    meaningful change that truly lasts.
+                                    The Exhdo Host Community Development Trust (EHCDT) is committed to transforming communities through compassion, education, and sustainable development. Together, we create meaningful change that truly lasts.
                                 </motion.p>
 
                                 {/* Buttons */}
@@ -220,7 +218,7 @@ export default function Hero() {
                                 />
                                 <div className="absolute w-[420px] h-[420px] bg-[#ffc107]/30 blur-[120px] rounded-full" />
 
-                                {/* Hero Image - Fixed to cut at stats line */}
+                                {/* Hero Image */}
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     animate={{ opacity: 1, scale: 1 }}

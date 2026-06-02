@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function Team() {
-    const team = [
-        { name: 'Jane Cooper', role: 'Marketing Coordinator' },
-        { name: 'Darlene Robertson', role: 'Marketing Coordinator' },
-        { name: 'Darrell Steward', role: 'Marketing Coordinator' },
-        { name: 'Jenny Wilson', role: 'Marketing Coordinator' },
+    const leadership = [
+        { name: 'Dr. Macaulay Akpan', role: 'Chairman, Board of Trustees' },
+        { name: 'Mrs. Nelly Ukpong', role: 'Vice Chairman, Board of Trustees' },
+        { name: 'Engr. Moses Ekpe Tobby', role: 'Head, Management Committee' },
+        { name: 'Mr. Sam Atara', role: 'Secretary, Board of Trustees' },
     ]
 
     return (
@@ -22,15 +22,15 @@ export default function Team() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#0a1628]">
-                        Crafting Excellence as a <span className="text-[#0d47a1]">Team</span>
+                        Our <span className="text-[#0d47a1]">Leadership</span>
                     </h2>
                     <p className="text-[#64748b] mt-2 max-w-2xl mx-auto">
-                        Our success is built on the dedication and expertise of our team. Together, we bring innovative ideas to life.
+                        Guided by experienced leaders committed to the sustainable development of our host communities.
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    {team.map((member, index) => (
+                    {leadership.map((member, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
@@ -41,7 +41,7 @@ export default function Team() {
                         >
                             <div className="relative h-[250px] rounded-2xl overflow-hidden mb-3">
                                 <Image
-                                    src={`/images/team-${index + 1}.jpg`}
+                                    src={`/images/leadership-${index + 1}.jpg`}
                                     alt={member.name}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
