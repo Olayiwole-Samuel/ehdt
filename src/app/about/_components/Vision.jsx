@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Vision() {
     const items = [
-        'Sustainable development of Exhdo host communities',
+        'Sustainable development of Ekid host communities',
         'Active participation and ownership by host communities',
         'Transparent and accountable fund management',
         'Long-term community empowerment and growth',
@@ -37,7 +37,7 @@ export default function Vision() {
                         </div>
 
                         <p className="text-lg text-[#64748b] leading-relaxed">
-                            At EHCDT, our vision is to redefine the future of community development through innovation,
+                            At EKIT, our vision is to redefine the future of community development through innovation,
                             sustainability, and excellence. We aim to create a model of host community development
                             where the benefits of oil and gas operations are fully realized by the communities that host them,
                             ensuring that every initiative empowers and transforms lives for generations to come.

@@ -156,7 +156,7 @@ export default function Footer() {
                             </h4>
                             <p className="text-white/60 leading-relaxed mb-6">
                                 Subscribe to receive updates, news, and stories
-                                from EHCDT.
+                                from Ekid.
                             </p>
                             <form className="space-y-4">
                                 <input
@@ -176,7 +176,7 @@ export default function Footer() {
 
                     <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
                         <p className="text-sm text-white/40 text-center md:text-left">
-                            © {new Date().getFullYear()} EHCDT. All rights reserved.
+                            © {new Date().getFullYear()} Ekid. All rights reserved.
                         </p>
                         <div className="flex items-center gap-6 text-sm text-white/40">
                             <Link

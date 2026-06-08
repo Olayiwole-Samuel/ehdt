@@ -66,7 +66,7 @@ export default function AboutPreview() {
                     </h2>
 
                     <p className="mt-7 text-[#64748b] text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto">
-                        The Exhdo Host Community Development Trust (EHCDT) is a community-driven organization dedicated to building sustainable futures through compassion, education, and purposeful action — funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL).
+                        The Ekid Host Community Development Trust (EHCDT) is a community-driven organization dedicated to building sustainable futures through compassion, education, and purposeful action — funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL).
                     </p>
                 </motion.div>
 
@@ -101,7 +101,7 @@ export default function AboutPreview() {
                             </h3>
 
                             <p className="mt-7 text-[#64748b] leading-relaxed text-lg">
-                                EHCDT is built by a diverse team of thinkers, builders, and community advocates who care deeply about helping host communities grow. With a focus on sustainability, transparency, and people, we're creating solutions that truly make a difference.
+                                Ekid is built by a diverse team of thinkers, builders, and community advocates who care deeply about helping host communities grow. With a focus on sustainability, transparency, and people, we're creating solutions that truly make a difference.
                             </p>
 
                             <div className="mt-10 grid grid-cols-3 gap-4">

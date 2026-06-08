@@ -19,7 +19,7 @@ const newsData = [
         excerpt:
             'We successfully completed the construction of a new primary school, benefiting over 300 children in the community.',
         content:
-            'We are thrilled to announce the successful completion of a new primary school in the host community. This project, which began in early 2024, has been a collaborative effort between EHCDT, local community members, and our dedicated partners. The school features six classrooms, a library, a playground, and clean water facilities. Over 300 children will now have access to quality education in a safe and inspiring environment. This is just one of many projects we are undertaking to ensure sustainable development in our communities. The school was officially opened in a ceremony attended by community leaders, parents, and local government officials. We extend our deepest gratitude to everyone who made this possible.',
+            'We are thrilled to announce the successful completion of a new primary school in the host community. This project, which began in early 2024, has been a collaborative effort between EKID, local community members, and our dedicated partners. The school features six classrooms, a library, a playground, and clean water facilities. Over 300 children will now have access to quality education in a safe and inspiring environment. This is just one of many projects we are undertaking to ensure sustainable development in our communities. The school was officially opened in a ceremony attended by community leaders, parents, and local government officials. We extend our deepest gratitude to everyone who made this possible.',
         date: 'December 15, 2024',
         image: '/school.png',
         category: 'Education',

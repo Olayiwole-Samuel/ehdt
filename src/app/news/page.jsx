@@ -160,7 +160,7 @@ export default function NewsPage() {
                             >
                                 Discover inspiring stories,
                                 impactful community projects, and
-                                important updates from EHCDT as we
+                                important updates from EKID as we
                                 continue empowering lives and
                                 building sustainable futures.
                             </p>

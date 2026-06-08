@@ -261,7 +261,7 @@ export default function MembersPage() {
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[0.95] tracking-[-0.05em]">
                             Meet The
                             <span className="block text-[#ffc107]">
-                                People Behind EHCDT
+                                People Behind EKID
                             </span>
                         </h1>
 
