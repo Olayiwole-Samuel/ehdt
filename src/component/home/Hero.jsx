@@ -151,7 +151,7 @@ export default function Hero() {
                                     transition={{ duration: 0.9 }}
                                     className="mt-8 text-lg leading-relaxed text-[#64748b] max-w-xl"
                                 >
-                                    The Exhdo Host Community Development Trust (EHCDT) is committed to transforming communities through compassion, education, and sustainable development. Together, we create meaningful change that truly lasts.
+                                    The <strong>Ekid</strong> Host Community Development Trust (EHCDT) is committed to transforming communities through compassion, education, and sustainable development. Together, we create meaningful change that truly lasts.
                                 </motion.p>
 
                                 {/* Buttons */}

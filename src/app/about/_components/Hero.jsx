@@ -53,7 +53,7 @@ export default function Hero() {
                                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                                 className="block"
                             >
-                                Exhdo Host Community
+                                Ekid Host Community
                             </motion.span>
                             <motion.span
                                 initial={{ opacity: 0, y: 30 }}
@@ -72,7 +72,7 @@ export default function Hero() {
                             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                             className="mt-6 text-lg sm:text-xl text-[#64748b] leading-relaxed max-w-2xl font-normal"
                         >
-                            Incorporated on 27th September 2023 (CAC Registration No. 7153605), the Exhdo Host Community Development Trust (EHCDT) is funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) — settlers in PML 10. We are committed to the sustainable development of our host communities through active participation and transparent governance.
+                            Incorporated on 27th September 2023 (CAC Registration No. 7153605), the <strong>Ekid</strong> Host Community Development Trust (EHCDT) is funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) — settlers in PML 10. We are committed to the sustainable development of our host communities through active participation and transparent governance.
                         </motion.p>
 
                         {/* Stats line */}

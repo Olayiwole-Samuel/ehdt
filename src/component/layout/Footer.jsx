@@ -1,4 +1,3 @@
-// components/Layout/Footer.jsx
 'use client'
 
 import Link from 'next/link'
@@ -28,18 +27,13 @@ const footerLinks = [
 export default function Footer() {
     return (
         <footer className="relative overflow-hidden bg-[#0a1628] text-white">
-
-            {/* BACKGROUND EFFECTS */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0d47a1]/20 rounded-full blur-3xl" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#f59e0b]/10 rounded-full blur-3xl" />
             </div>
-            {/* MAIN FOOTER */}
             <div className="relative">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
-
                         {/* BRAND */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -48,7 +42,6 @@ export default function Footer() {
                             viewport={{ once: true }}
                             className="lg:col-span-5"
                         >
-
                             <Link
                                 href="/"
                                 className="inline-flex items-center gap-4"
@@ -59,21 +52,17 @@ export default function Footer() {
                                            <img src="/logo.png" alt="" className="rounded-2xl"/>
                                         </span>
                                     </div>
-
                                     <div className="absolute -inset-1 rounded-2xl border border-white/10" />
                                 </div>
-
                                 <div>
                                     <h3 className="text-3xl font-black tracking-tight">
-                                        EHCDT
+                                        EKID
                                     </h3>
-
                                     <p className="text-white/60 text-sm mt-1">
                                         Participation for Sustainable Development
                                     </p>
                                 </div>
                             </Link>
-
                             <p className="mt-8 text-white/60 leading-relaxed max-w-md">
                                 We are committed to driving sustainable
                                 transformation through innovation,
@@ -81,9 +70,7 @@ export default function Footer() {
                                 development initiatives.
                             </p>
 
-                            {/* SOCIALS */}
                             <div className="flex items-center gap-4 mt-8">
-
                                 {['facebook', 'instagram', 'twitter'].map((social, index) => (
                                     <Link
                                         key={index}
@@ -100,7 +87,6 @@ export default function Footer() {
                                                 <path d="M22 12a10 10 0 10-11.5 9.88v-6.99H8.08V12h2.42V9.8c0-2.4 1.43-3.73 3.62-3.73 1.05 0 2.15.19 2.15.19v2.36h-1.21c-1.2 0-1.57.75-1.57 1.51V12h2.67l-.43 2.89h-2.24v6.99A10 10 0 0022 12z" />
                                             </svg>
                                         )}
-
                                         {social === 'instagram' && (
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +97,6 @@ export default function Footer() {
                                                 <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z" />
                                             </svg>
                                         )}
-
                                         {social === 'twitter' && (
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -127,9 +112,7 @@ export default function Footer() {
                             </div>
                         </motion.div>
 
-                        {/* LINKS */}
                         <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-10">
-
                             {footerLinks.map((section, index) => (
                                 <motion.div
                                     key={index}
@@ -144,7 +127,6 @@ export default function Footer() {
                                     <h4 className="text-lg font-bold text-white mb-6">
                                         {section.title}
                                     </h4>
-
                                     <ul className="space-y-4">
                                         {section.links.map((link, i) => (
                                             <li key={i}>
@@ -162,7 +144,6 @@ export default function Footer() {
                             ))}
                         </div>
 
-                        {/* NEWSLETTER */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -173,19 +154,16 @@ export default function Footer() {
                             <h4 className="text-lg font-bold text-white mb-6">
                                 Stay Updated
                             </h4>
-
                             <p className="text-white/60 leading-relaxed mb-6">
                                 Subscribe to receive updates, news, and stories
                                 from EHCDT.
                             </p>
-
                             <form className="space-y-4">
                                 <input
                                     type="email"
                                     placeholder="Your email address"
                                     className="w-full h-14 rounded-2xl bg-white/5 border border-white/10 px-5 text-white placeholder:text-white/40 outline-none focus:border-[#0d47a1]"
                                 />
-
                                 <button
                                     type="submit"
                                     className="w-full h-14 rounded-2xl bg-[#0d47a1] hover:bg-[#0b3d91] transition-all duration-300 font-semibold"
@@ -196,12 +174,10 @@ export default function Footer() {
                         </motion.div>
                     </div>
 
-                    {/* BOTTOM */}
                     <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
                         <p className="text-sm text-white/40 text-center md:text-left">
                             © {new Date().getFullYear()} EHCDT. All rights reserved.
                         </p>
-
                         <div className="flex items-center gap-6 text-sm text-white/40">
                             <Link
                                 href="/privacy-policy"
@@ -209,7 +185,6 @@ export default function Footer() {
                             >
                                 Privacy Policy
                             </Link>
-
                             <Link
                                 href="/terms"
                                 className="hover:text-white transition-colors"
@@ -218,7 +193,6 @@ export default function Footer() {
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </div>
         </footer>

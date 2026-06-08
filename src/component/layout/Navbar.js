@@ -74,7 +74,7 @@ export default function Navbar() {
                                 <img src="/logo.png" alt="" className="rounded-full"/>
                             </motion.div>
                             <span className="text-white font-extrabold text-xl tracking-tight bg-clip-text group-hover:text-brand-gold transition-colors duration-300">
-                                EHCDT
+                                EKID
                             </span>
                         </Link>
 
@@ -133,7 +133,6 @@ export default function Navbar() {
                 </div>
             </motion.nav>
 
-            {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div

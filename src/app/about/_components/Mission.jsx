@@ -97,7 +97,7 @@ export default function Mission() {
                             variants={itemVariants}
                             className="text-base sm:text-lg text-[#64748b] font-normal leading-relaxed text-justify"
                         >
-                            To manage and administer funds contributed by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) for the benefit and sustainable development of the Exhdo host communities in Eket and Esit Eket Local Government Areas. We are committed to the active participation of host communities in all initiatives, ensuring that development is community-driven and aligned with the 5-year Community Development Plan (CDP).
+                            To manage and administer funds contributed by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) for the benefit and sustainable development of the <strong>Ekid</strong> host communities in Eket and Esit Eket Local Government Areas. We are committed to the active participation of host communities in all initiatives, ensuring that development is community-driven and aligned with the 5-year Community Development Plan (CDP).
                         </motion.p>
 
                         {/* Interactive Premium Checklist */}

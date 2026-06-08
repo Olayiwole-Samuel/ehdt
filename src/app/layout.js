@@ -1,4 +1,3 @@
-// src/app/layout.jsx
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '../component/layout/Navbar'
@@ -7,7 +6,7 @@ import Footer from '../component/layout/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: 'EHCDT - Exhdo Host Community Development Trust',
+    title: 'Ekid Host Community Development Trust (EHCDT)',
     description: 'Participation for Sustainable Development — Empowering host communities through sustainable development initiatives.',
 }
 
