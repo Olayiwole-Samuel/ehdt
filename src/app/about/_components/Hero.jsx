@@ -65,14 +65,14 @@ export default function Hero() {
                             </motion.span>
                         </h1>
 
-                        {/* Description - Updated with key facts */}
+                        {/* Description */}
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                             className="mt-6 text-lg sm:text-xl text-[#64748b] leading-relaxed max-w-2xl font-normal"
                         >
-                            Incorporated on 27th September 2023 (CAC Registration No. 7153605), the <strong>Ekid</strong> Host Community Development Trust (EHCDT) is funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) — settlers in PML 10. We are committed to the sustainable development of our host communities through active participation and transparent governance.
+                            Incorporated on 27th September 2023 (CAC Registration No. RC 7153605), the <strong>Ekid</strong> Host Community Development Trust (EHCDT) is funded by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) — settlers in PML 10. We are committed to the sustainable development of our host communities through active participation and transparent governance.
                         </motion.p>
 
                         {/* Stats line */}
@@ -80,19 +80,19 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                            className="mt-8 flex items-center gap-6"
+                            className="mt-8 flex flex-wrap items-center gap-6"
                         >
                             <div className="flex items-center gap-2">
                                 <div className="w-3 h-3 rounded-full bg-[#0d47a1]" />
-                                <span className="text-sm font-medium text-[#0a1628]">150+ Projects</span>
+                                <span className="text-sm font-medium text-[#0a1628]">Enoch Abasido & Co.</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <div className="w-3 h-3 rounded-full bg-[#ff6d00]" />
-                                <span className="text-sm font-medium text-[#0a1628]">100+ Team Members</span>
+                                <span className="text-sm font-medium text-[#0a1628]">Zenith Bank Plc</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <div className="w-3 h-3 rounded-full bg-[#ffc107]" />
-                                <span className="text-sm font-medium text-[#0a1628]">200+ Communities</span>
+                                <span className="text-sm font-medium text-[#0a1628]">4 Accounts</span>
                             </div>
                         </motion.div>
                     </motion.div>
@@ -136,7 +136,7 @@ export default function Hero() {
                                 />
                             </motion.div>
 
-                            {/* Decorative Badge - Moved to bottom right of large image */}
+                            {/* Decorative Badge */}
                             <motion.div
                                 style={{ rotate: rotateBadge }}
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -160,10 +160,8 @@ export default function Hero() {
                                     <div className="absolute w-3 h-3 bg-[#0d47a1] rounded-full" />
                                 </div>
                             </motion.div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

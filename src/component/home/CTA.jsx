@@ -3,7 +3,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Heart, Phone, Mail } from 'lucide-react'
+import { ArrowRight, Heart } from 'lucide-react'
 
 export default function CTA() {
     return (
@@ -59,18 +59,6 @@ export default function CTA() {
                                     Donate
                                 </motion.button>
                             </Link>
-                        </div>
-                    </div>
-
-                    {/* Contact info - small under text */}
-                    <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center gap-4 text-sm text-white/70">
-                        <div className="flex items-center gap-2">
-                            <Phone size={14} />
-                            <span>+234 000 000 0000</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Mail size={14} />
-                            <span>hello@ehcdt.org</span>
                         </div>
                     </div>
                 </motion.div>

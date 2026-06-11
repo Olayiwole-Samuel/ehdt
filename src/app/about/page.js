@@ -6,17 +6,18 @@ import Mission from './_components/Mission'
 import Vision from './_components/Vision'
 import History from './_components/History'
 import HowWeWork from './_components/HowWeWork'
-import Team from './_components/Team'
 
 export const metadata = {
-    title: 'About EHCDT - Exhdo Host Community Development Trust',
-    description: 'Learn about EHCDT\'s mission, vision, history, and the team behind our community development work.',
+    title: 'About Ekid Host Community Development Trust (EHCDT)',
+    description: 'Learn about EHCDT\'s mission, vision, history, and our commitment to sustainable community development.',
 }
 
 export default function AboutPage() {
     return (
         <>
             <Hero />
+            <IntroText />
+            <Stats />
             <Mission />
             <Vision />
             <History />

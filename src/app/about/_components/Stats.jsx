@@ -1,11 +1,10 @@
-// src/app/about/_components/Stats.jsx
 'use client'
 import { motion } from 'framer-motion'
 
 export default function Stats() {
     const stats = [
-        { number: '391', label: 'Total Beneficiaries' },
-        { number: '7', label: 'Board of Trustees' },
+        { number: '391', label: 'Total Beneficiaries (2024)' },
+        { number: '₦113.69M', label: 'Total Investment' },
         { number: '10', label: 'Management Committee' },
         { number: '4', label: 'Advisory Committee' },
     ]

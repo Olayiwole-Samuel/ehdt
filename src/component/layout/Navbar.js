@@ -71,7 +71,7 @@ export default function Navbar() {
                                 whileHover={{ rotate: 10, scale: 1.05 }}
                                 className="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center shadow-lg shadow-brand-gold/20"
                             >
-                                <img src="/logo.png" alt="" className="rounded-full"/>
+                                <img src="/logoo.png" alt="" className="rounded-full"/>
                             </motion.div>
                             <span className="text-white font-extrabold text-xl tracking-tight bg-clip-text group-hover:text-brand-gold transition-colors duration-300">
                                 EKID

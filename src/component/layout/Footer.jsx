@@ -49,7 +49,7 @@ export default function Footer() {
                                 <div className="relative">
                                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f59e0b] to-[#ff8f00] flex items-center justify-center shadow-2xl shadow-[#f59e0b]/20">
                                         <span className="text-[#0a1628] text-2xl font-black">
-                                           <img src="/logo.png" alt="" className="rounded-2xl"/>
+                                           <img src="/logoo.png" alt="" className="rounded-2xl"/>
                                         </span>
                                     </div>
                                     <div className="absolute -inset-1 rounded-2xl border border-white/10" />

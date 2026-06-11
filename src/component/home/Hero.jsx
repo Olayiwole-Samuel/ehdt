@@ -8,7 +8,7 @@ import {
     HeartHandshake,
     Users,
     Globe2,
-    BookOpen,
+    Award,
 } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 
@@ -81,25 +81,25 @@ export default function Hero() {
             number: '391',
             label: 'Beneficiaries Reached',
             icon: HeartHandshake,
-            sub: 'And counting...',
+            sub: 'In 2024',
         },
         {
-            number: '6',
-            label: 'Programs Delivered',
-            icon: BookOpen,
-            sub: 'Growing daily...',
+            number: '113.69',
+            label: 'Total Investment (₦M)',
+            icon: Award,
+            sub: 'Across all programmes',
         },
         {
-            number: '21',
-            label: 'Leadership Team',
+            number: '10',
+            label: 'Management Committee',
             icon: Users,
-            sub: 'Dedicated professionals',
+            sub: '4 Executive, 6 Non-Executive',
         },
         {
-            number: '2',
-            label: 'Communities Reached',
+            number: '4',
+            label: 'Advisory Committee',
             icon: Globe2,
-            sub: 'Expanding more...',
+            sub: 'From host communities',
         },
     ]
 

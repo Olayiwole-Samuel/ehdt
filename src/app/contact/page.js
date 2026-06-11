@@ -235,8 +235,8 @@ export default function ContactPage() {
                                         </p>
 
                                         <p className="font-semibold text-[#0a1628]">
-                                            23, Community Road, Host Community,
-                                            Nigeria
+                                            Uquo Plaza, Uquo, Esit Eket LGA,
+                                            Akwa Ibom State
                                         </p>
                                     </div>
                                 </div>

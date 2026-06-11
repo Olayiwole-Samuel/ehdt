@@ -12,7 +12,7 @@ export default function IntroText() {
                     viewport={{ once: true }}
                     className="text-lg lg:text-xl text-[#64748b] leading-relaxed text-center"
                 >
-                    The <strong>Ekid</strong> Host Community Development Trust (EHCDT) was incorporated with the Corporate Affairs Commission (CAC) on <strong>27th September 2023</strong> with registration number <strong>7153605</strong>. Funded by <strong>Frontier Oil Limited (FOL)</strong> and <strong>Savannah Uquo Gas Limited (SEUGL)</strong> — the settlers in PML 10 — the Trust is dedicated to managing and administering funds for the benefit and sustainable development of the <strong>Ekid</strong> host communities.
+                    The <strong>Ekid</strong> Host Community Development Trust (EHCDT) was incorporated with the Corporate Affairs Commission (CAC) on <strong>27th September 2023</strong> with registration number <strong>RC 7153605</strong>. Funded by <strong>Frontier Oil Limited (FOL)</strong> and <strong>Savannah Uquo Gas Limited (SEUGL)</strong> — the settlers in PML 10 — the Trust is dedicated to managing and administering funds for the benefit and sustainable development of the <strong>Ekid</strong> host communities.
                 </motion.p>
 
                 <motion.p
@@ -22,7 +22,7 @@ export default function IntroText() {
                     viewport={{ once: true }}
                     className="text-lg lg:text-xl text-[#64748b] leading-relaxed text-center mt-6"
                 >
-                    The name "<strong>Ekid</strong>" was coined by the stakeholders of Eket and Esit Eket Local Government Areas to enthrone ownership and active participation of the host communities. A 5-year Community Development Plan (CDP) and fund matrix were prepared in collaboration with the host communities, ensuring that every initiative is community-driven and sustainable.
+                    The Trust operates from its office at <strong>Uquo Plaza, Uquo, Esit Eket LGA, Akwa Ibom State</strong>, and is audited by <strong>Enoch Abasido & Co.</strong> (Chartered Accountants), with banking services provided by <strong>Zenith Bank Plc</strong>.
                 </motion.p>
             </div>
         </section>

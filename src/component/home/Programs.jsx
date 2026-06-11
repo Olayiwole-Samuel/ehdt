@@ -1,12 +1,11 @@
-// src/components/Home/Programs.jsx
 'use client'
 
 import { motion } from 'framer-motion'
 import {
+    Award,
+    GraduationCap,
     BookOpen,
-    HeartPulse,
-    Droplet,
-    Building2,
+    Wrench,
     ArrowRight,
     Sparkles,
 } from 'lucide-react'
@@ -15,34 +14,34 @@ import Link from 'next/link'
 
 const programs = [
     {
-        icon: BookOpen,
-        title: 'Education',
+        icon: Award,
+        title: 'Small Business Grants',
         description:
-            'Building schools, providing scholarships, and supporting teachers to ensure every child has access to quality education.',
+            '123 beneficiaries received small business grants totaling ₦18.45 million to support entrepreneurship and local economic development.',
         color: '#0d47a1',
         bg: '#e8f0fe',
     },
     {
-        icon: HeartPulse,
-        title: 'Healthcare',
+        icon: GraduationCap,
+        title: 'Postgraduate Scholarships',
         description:
-            'Mobile clinics, health education, and medical outreach programs to bring essential healthcare to remote communities.',
+            '47 beneficiaries awarded postgraduate scholarships totaling ₦23.5 million to pursue advanced studies.',
         color: '#ff6d00',
         bg: '#fff3e0',
     },
     {
-        icon: Droplet,
-        title: 'Water & Sanitation',
+        icon: BookOpen,
+        title: 'Post-Secondary Scholarships',
         description:
-            'Borehole projects, clean water initiatives, and sanitation education to improve health and quality of life.',
+            '161 beneficiaries received post-secondary scholarships totaling ₦40.25 million to access higher education.',
         color: '#4fc3f7',
         bg: '#e1f5fe',
     },
     {
-        icon: Building2,
-        title: 'Infrastructure',
+        icon: Wrench,
+        title: 'Skills Acquisition Program',
         description:
-            'Community centers, roads, and public facilities that strengthen the foundation for sustainable development.',
+            '80 beneficiaries trained across 10 skill areas with a total investment of ₦31.49 million.',
         color: '#ffc107',
         bg: '#fff8e1',
     },
@@ -79,7 +78,7 @@ export default function Programs() {
                     </h2>
 
                     <p className="mt-7 text-[#64748b] text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto">
-                        We focus on strategic initiatives that empower communities, improve lives, and create sustainable development for future generations.
+                        In 2024, EHCDT invested <strong>₦113.69 million</strong> across four key programmes, reaching <strong>391 beneficiaries</strong> in our host communities.
                     </p>
                 </motion.div>
 
@@ -126,6 +125,24 @@ export default function Programs() {
                 </div>
 
                 {/* CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="mt-16 text-center"
+                >
+                    <Link href="/about#programs">
+                        <motion.button
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-[#0d47a1] text-white font-semibold shadow-lg"
+                        >
+                            View All Programs
+                            <ArrowRight size={20} />
+                        </motion.button>
+                    </Link>
+                </motion.div>
             </div>
         </section>
     )

@@ -1,4 +1,3 @@
-// src/app/about/_components/HowWeWork.jsx
 'use client'
 
 import { motion } from 'framer-motion'
@@ -16,7 +15,7 @@ const steps = [
         icon: Search,
         title: 'Discover',
         description:
-            'Understanding community needs through deep research, collaboration, and active listening — guided by the Community Development Foundation (CDF) model.',
+            'Understanding community needs through deep research, town halls, focus groups, and active listening — guided by the Community Development Foundation (CDF) model.',
         color: '#0d47a1',
         bg: '#e8f0fe',
     },
@@ -201,25 +200,7 @@ export default function HowWeWork() {
                                 </p>
                             </div>
 
-                            {/* Right Stats */}
-                            <div className="grid grid-cols-2 gap-6 min-w-fit">
-                                <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center">
-                                    <h4 className="text-4xl font-black text-white">
-                                        100%
-                                    </h4>
-                                    <p className="mt-2 text-sm text-white/60">
-                                        Transparency
-                                    </p>
-                                </div>
-                                <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center">
-                                    <h4 className="text-4xl font-black text-white">
-                                        24/7
-                                    </h4>
-                                    <p className="mt-2 text-sm text-white/60">
-                                        Collaboration
-                                    </p>
-                                </div>
-                            </div>
+                            {/* Right Stats - Removed as not in PDF */}
                         </div>
                     </div>
                 </motion.div>

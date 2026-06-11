@@ -1,14 +1,17 @@
-// src/app/about/_components/Team.jsx
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function Team() {
     const leadership = [
-        { name: 'Dr. Macaulay Akpan', role: 'Chairman, Board of Trustees' },
-        { name: 'Mrs. Nelly Ukpong', role: 'Vice Chairman, Board of Trustees' },
-        { name: 'Engr. Moses Ekpe Tobby', role: 'Head, Management Committee' },
-        { name: 'Mr. Sam Atara', role: 'Secretary, Board of Trustees' },
+        { name: 'Dr. Macaulay Akpan', role: 'Chairman, Board of Trustees (Esit Eket)' },
+        { name: 'Mrs. Nelly Ukpong', role: 'Vice Chairman, Board of Trustees (Eket)' },
+        { name: 'Bassey Essien, Esq.', role: 'Member, Board of Trustees (Esit Eket)' },
+        { name: 'Pastor Ita Umo Udoh', role: 'Member, Board of Trustees (Eket)' },
+        { name: 'Dr. Umana Sam Umana', role: 'Member, Board of Trustees (Esit Eket)' },
+        { name: 'Yvonne Oluyede, Esq.', role: 'Member, Board of Trustees (Esit Eket)' },
+        { name: 'Chief Etukudo Albert Etukudo', role: 'Member, Board of Trustees (Eket)' },
+        { name: 'Mr. Sam Atara', role: 'Secretary, Board of Trustees (FOL)' },
     ]
 
     return (
@@ -25,7 +28,7 @@ export default function Team() {
                         Our <span className="text-[#0d47a1]">Leadership</span>
                     </h2>
                     <p className="text-[#64748b] mt-2 max-w-2xl mx-auto">
-                        Guided by experienced leaders committed to the sustainable development of our host communities.
+                        Guided by experienced leaders committed to the sustainable development of our host communities. The Board of Trustees comprises <strong>3 members from Eket</strong> and <strong>4 members from Esit Eket</strong>, along with a Secretary appointed by the settler.
                     </p>
                 </motion.div>
 
