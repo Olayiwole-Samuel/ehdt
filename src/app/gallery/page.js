@@ -11,7 +11,7 @@ const galleryItems = [
     {
         id: 1,
         title: 'School Opening Ceremony',
-        description: 'Community members celebrate the opening of a new school built by EHCDT.',
+        description: 'Community members celebrate the opening of a new school built by EKID.',
         date: 'December 15, 2024',
         image: '/images/gallery/school-opening.jpg',
         category: 'Education',
@@ -51,7 +51,7 @@ const galleryItems = [
     {
         id: 6,
         title: 'Partnership Signing Ceremony',
-        description: 'EHCDT signs partnership agreement with local government to expand community projects.',
+        description: 'EKID signs partnership agreement with local government to expand community projects.',
         date: 'October 15, 2024',
         image: '/images/gallery/partnership-signing.jpg',
         category: 'Partnerships',
