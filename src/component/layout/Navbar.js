@@ -37,9 +37,9 @@ export default function Navbar() {
     ]
 
     const activitiesLinks = [
-        { href: '/about#programs', label: 'Programs' },
+        { href: '/#programs', label: 'Programs' },
         { href: '/news', label: 'News' },
-        { href: '/news', label: 'Gallery' },
+        { href: '/gallery', label: 'Gallery' },
     ]
 
     const menuContainerVariants = {

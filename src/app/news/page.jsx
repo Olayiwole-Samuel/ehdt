@@ -9,13 +9,52 @@ import {
     TrendingUp,
 } from 'lucide-react'
 
-// Sample news data — replace with Supabase data later
+// Combined data: 4 Programs + 2 original news items
 const newsData = [
     {
         id: 1,
+        title: 'Small Business Grants',
+        excerpt: '123 beneficiaries received small business grants totaling ₦18.45 million to support entrepreneurship and local economic development.',
+        content: 'Full article content goes here...',
+        date: 'December 2024',
+        image: '/community.jpg',
+        category: 'Programs',
+        slug: 'small-business-grants',
+    },
+    {
+        id: 2,
+        title: 'Postgraduate Scholarships',
+        excerpt: '47 beneficiaries awarded postgraduate scholarships totaling ₦23.5 million to pursue advanced studies.',
+        content: 'Full article content goes here...',
+        date: 'November 2024',
+        image: '/collab.jpg',
+        category: 'Programs',
+        slug: 'postgraduate-scholarships',
+    },
+    {
+        id: 3,
+        title: 'Post-Secondary Scholarships',
+        excerpt: '161 beneficiaries received post-secondary scholarships totaling ₦40.25 million to access higher education.',
+        content: 'Full article content goes here...',
+        date: 'October 2024',
+        image: '/school.png',
+        category: 'Programs',
+        slug: 'post-secondary-scholarships',
+    },
+    {
+        id: 4,
+        title: 'Skills Acquisition Program',
+        excerpt: '80 beneficiaries trained across 10 skill areas with a total investment of ₦31.49 million.',
+        content: 'Full article content goes here...',
+        date: 'September 2024',
+        image: '/collab.jpg',
+        category: 'Programs',
+        slug: 'skills-acquisition-program',
+    },
+    {
+        id: 5,
         title: 'New School Built in Host Community',
-        excerpt:
-            'We successfully completed the construction of a new primary school, benefiting over 300 children in the community.',
+        excerpt: 'We successfully completed the construction of a new primary school, benefiting over 300 children in the community.',
         content: 'Full article content goes here...',
         date: 'December 15, 2024',
         image: '/school.png',
@@ -23,66 +62,21 @@ const newsData = [
         slug: 'new-school-built-in-host-community',
     },
     {
-        id: 2,
+        id: 6,
         title: 'Community Health Outreach Program',
-        excerpt:
-            'Over 500 community members received free medical checkups and health education during our latest outreach.',
+        excerpt: 'Over 500 community members received free medical checkups and health education during our latest outreach.',
         content: 'Full article content goes here...',
         date: 'December 1, 2024',
-        image: '/outreach-2.jpg',
+        image: '/team-2.jpg',
         category: 'Healthcare',
         slug: 'community-health-outreach-program',
-    },
-    {
-        id: 3,
-        title: 'Water Project Brings Clean Water',
-        excerpt:
-            'New borehole installed providing clean drinking water to over 1,200 households in the region.',
-        content: 'Full article content goes here...',
-        date: 'November 20, 2024',
-        image: '/water.jpg',
-        category: 'Water & Sanitation',
-        slug: 'water-project-brings-clean-water',
-    },
-    {
-        id: 4,
-        title: 'Annual Community Gathering 2024',
-        excerpt:
-            'Over 1,000 community members gathered to celebrate our shared achievements and plan for the future.',
-        content: 'Full article content goes here...',
-        date: 'November 10, 2024',
-        image: '/collab.jpg',
-        category: 'Community',
-        slug: 'annual-community-gathering-2024',
-    },
-    {
-        id: 5,
-        title: 'Youth Empowerment Workshop',
-        excerpt:
-            '50 young leaders participated in a 3-day workshop focused on leadership and sustainable development.',
-        content: 'Full article content goes here...',
-        date: 'October 28, 2024',
-        image: '/community.jpg',
-        category: 'Youth Development',
-        slug: 'youth-empowerment-workshop',
-    },
-    {
-        id: 6,
-        title: 'Partnership with Local Government',
-        excerpt:
-            'EHCDT signs a new partnership agreement with the local government to expand community development projects.',
-        content: 'Full article content goes here...',
-        date: 'October 15, 2024',
-        image: '/team-2.jpg',
-        category: 'Partnerships',
-        slug: 'partnership-with-local-government',
     },
 ]
 
 export const metadata = {
-    title: 'News & Updates | EHCDT',
+    title: 'News & Updates | EKID',
     description:
-        'Stay updated with the latest news, projects, and community impact stories from EHCDT.',
+        'Stay updated with the latest programs, projects, and community impact stories from EKID.',
 }
 
 export default function NewsPage() {
@@ -92,12 +86,8 @@ export default function NewsPage() {
         <main className="relative overflow-hidden bg-[#f8fafc]">
             {/* BACKGROUND */}
             <div className="absolute inset-0 overflow-hidden">
-                {/* Glow */}
                 <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#ffc107]/20 blur-[120px] rounded-full" />
-
                 <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#4fc3f7]/20 blur-[120px] rounded-full" />
-
-                {/* Grid */}
                 <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#0d47a1_1px,transparent_1px),linear-gradient(to_bottom,#0d47a1_1px,transparent_1px)] bg-[size:70px_70px]" />
             </div>
 
@@ -121,7 +111,7 @@ export default function NewsPage() {
                         />
 
                         <span className="text-sm font-medium text-[#0d47a1]">
-                            Stories • Updates • Community Impact
+                            Programs • Updates • Community Impact
                         </span>
                     </div>
 
@@ -140,7 +130,7 @@ export default function NewsPage() {
                   text-[#0a1628]
                 "
                             >
-                                News &
+                                Programs &
                                 <br />
 
                                 <span className="text-[#ff6d00]">
@@ -158,10 +148,9 @@ export default function NewsPage() {
                   max-w-2xl
                 "
                             >
-                                Discover inspiring stories,
-                                impactful community projects, and
-                                important updates from EKID as we
-                                continue empowering lives and
+                                Discover our impactful programs,
+                                community projects, and important updates
+                                from EKID as we continue empowering lives and
                                 building sustainable futures.
                             </p>
 
@@ -178,11 +167,11 @@ export default function NewsPage() {
                   "
                                 >
                                     <h3 className="text-3xl font-black text-[#0a1628]">
-                                        120+
+                                        4
                                     </h3>
 
                                     <p className="text-sm text-[#64748b] mt-1">
-                                        Published Stories
+                                        Key Programs
                                     </p>
                                 </div>
 
@@ -197,11 +186,11 @@ export default function NewsPage() {
                   "
                                 >
                                     <h3 className="text-3xl font-black text-[#0a1628]">
-                                        26
+                                        391
                                     </h3>
 
                                     <p className="text-sm text-[#64748b] mt-1">
-                                        Communities Reached
+                                        Beneficiaries
                                     </p>
                                 </div>
                             </div>
@@ -239,11 +228,11 @@ export default function NewsPage() {
 
                                 <div>
                                     <h4 className="font-bold text-[#0a1628]">
-                                        Latest Stories
+                                        Latest Programs
                                     </h4>
 
                                     <p className="text-sm text-[#64748b]">
-                                        Updated weekly
+                                        Updated regularly
                                     </p>
                                 </div>
                             </div>
@@ -368,14 +357,14 @@ export default function NewsPage() {
                                 Latest
                                 <span className="text-[#0d47a1]">
                                     {' '}
-                                    Articles
+                                    Programs & Updates
                                 </span>
                             </h2>
 
                             <p className="mt-5 text-lg text-[#64748b] max-w-2xl">
-                                Explore the latest community
-                                projects, inspiring transformations,
-                                and impactful milestones.
+                                Explore our impactful programs, community
+                                projects, inspiring transformations, and
+                                important updates.
                             </p>
                         </div>
 
@@ -407,7 +396,7 @@ export default function NewsPage() {
                                 </h4>
 
                                 <p className="text-sm text-[#64748b]">
-                                    News updated regularly
+                                    Programs updated regularly
                                 </p>
                             </div>
                         </div>

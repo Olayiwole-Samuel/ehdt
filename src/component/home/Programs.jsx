@@ -132,7 +132,7 @@ export default function Programs() {
                     viewport={{ once: true }}
                     className="mt-16 text-center"
                 >
-                    <Link href="/about#programs">
+                    <Link href="/news#programs">
                         <motion.button
                             whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}
