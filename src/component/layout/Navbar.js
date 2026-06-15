@@ -2,11 +2,13 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 
 export default function Navbar() {
     const [activeLink, setActiveLink] = useState('Home')
     const [scrolled, setScrolled] = useState(false)
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+    const [isActivitiesOpen, setIsActivitiesOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +22,7 @@ export default function Navbar() {
         const handleResize = () => {
             if (window.innerWidth >= 768) {
                 setIsMobileMenuOpen(false)
+                setIsActivitiesOpen(false)
             }
         }
         window.addEventListener('resize', handleResize)
@@ -29,9 +32,14 @@ export default function Navbar() {
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
-        { href: '/news', label: 'News' },
         { href: '/members', label: 'Members' },
         { href: '/contact', label: 'Contact' },
+    ]
+
+    const activitiesLinks = [
+        { href: '/about#programs', label: 'Programs' },
+        { href: '/news', label: 'News' },
+        { href: '/news', label: 'Gallery' },
     ]
 
     const menuContainerVariants = {
@@ -102,6 +110,45 @@ export default function Navbar() {
                                     </Link>
                                 )
                             })}
+
+                            {/* Activities Dropdown */}
+                            <div className="relative">
+                                <button
+                                    onClick={() => setIsActivitiesOpen(!isActivitiesOpen)}
+                                    className={`flex items-center gap-1 px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-colors duration-300 ${
+                                        isActivitiesOpen ? 'text-brand-primary' : 'text-gray-300 hover:text-white'
+                                    }`}
+                                >
+                                    Activities
+                                    <ChevronDown size={14} className={`transition-transform duration-300 ${isActivitiesOpen ? 'rotate-180' : ''}`} />
+                                </button>
+
+                                <AnimatePresence>
+                                    {isActivitiesOpen && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: -10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.2 }}
+                                            className="absolute top-full left-0 mt-2 w-48 bg-brand-dark/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-xl overflow-hidden z-50"
+                                        >
+                                            {activitiesLinks.map((link, index) => (
+                                                <Link
+                                                    key={index}
+                                                    href={link.href}
+                                                    onClick={() => {
+                                                        setIsActivitiesOpen(false)
+                                                        setActiveLink('Activities')
+                                                    }}
+                                                    className="block px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors border-b border-white/5 last:border-none"
+                                                >
+                                                    {link.label}
+                                                </Link>
+                                            ))}
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
                         </div>
 
                         {/* CTA & Mobile Toggle */}
@@ -169,6 +216,21 @@ export default function Navbar() {
                                     </motion.div>
                                 )
                             })}
+
+                            {/* Mobile Activities Section */}
+                            <div className="pt-4">
+                                <p className="text-gray-400 text-sm font-semibold mb-2">Activities</p>
+                                {activitiesLinks.map((link, index) => (
+                                    <Link
+                                        key={index}
+                                        href={link.href}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="block py-2 text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ))}
+                            </div>
                         </motion.div>
 
                         <motion.div
