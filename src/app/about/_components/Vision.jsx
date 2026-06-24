@@ -35,11 +35,9 @@ export default function Vision() {
                             </h2>
                         </div>
 
+                        {/* UPDATED VISION STATEMENT */}
                         <p className="text-lg text-[#64748b] leading-relaxed">
-                            At <strong>EKID</strong>, our vision is to redefine the future of community development through innovation,
-                            sustainability, and excellence. We aim to create a model of host community development
-                            where the benefits of oil and gas operations are fully realized by the communities that host them,
-                            ensuring that every initiative empowers and transforms lives for generations to come.
+                            To be a model Host Community Development Trust, fostering sustainable prosperity, inclusive growth, and improved quality of life for present and future generations.
                         </p>
 
                         <div className="pt-4">

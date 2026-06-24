@@ -1,43 +1,26 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Star, Quote, ArrowLeft, ArrowRight, Sparkles } from 'lucide-react'
+import { Quote, ArrowLeft, ArrowRight, Sparkles } from 'lucide-react'
 import { useState, useRef } from 'react'
 
 const testimonials = [
     {
         id: 1,
-        name: 'Ryan Almeida',
-        date: '1 day ago',
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        stars: 5,
+        quote: '"This is a direct path to youth empowerment. Greater participation will improve employment and reduce social vulnerability."',
+        name: 'Edidem E. C. D. Abia',
+        role: 'Paramount Ruler of Eket LGA',
     },
     {
         id: 2,
-        name: 'Blossom Menezes',
-        date: '3 days ago',
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        stars: 5,
+        quote: '"We didn\'t want to just train and abandon them. We invested in quality tools and long training periods so they can compete, employ others, and lift their communities."',
+        name: 'Pastor Ita Udoh',
+        role: 'Spokesperson, Ekid HCDT',
     },
     {
         id: 3,
-        name: 'Jason Doe',
-        date: '1 week ago',
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        stars: 5,
-    },
-    {
-        id: 4,
-        name: 'Sarah Johnson',
-        date: '2 weeks ago',
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        stars: 5,
-    },
-    {
-        id: 5,
-        name: 'Michael Okafor',
-        date: '3 weeks ago',
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-        stars: 5,
+        quote: '"It reflects not only a strategic investment in human capital, but also a deliberate effort to empower individuals with practical skills for economic independence."',
+        name: 'Mr. Wole Adefila',
+        role: 'Operations Director, Frontier Oil Ltd.',
     },
 ]
 
@@ -78,27 +61,16 @@ export default function Testimonials() {
                 >
                     <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#ffc107]/30 mb-6">
                         <Sparkles className="text-[#ff6d00]" size={20} />
-                        <span className="text-sm font-medium tracking-widest text-[#0d47a1]">TESTIMONIALS</span>
+                        <span className="text-sm font-medium tracking-widest text-[#0d47a1]">REAL VOICES</span>
                     </div>
 
                     <h2 className="text-5xl lg:text-6xl font-black text-[#0a1628] tracking-[-1.2px] mb-4">
-                        What Our <span className="text-[#0d47a1]">Community</span> Says
+                        Real <span className="text-[#ff6d00]">Voices</span>, Real Impact
                     </h2>
 
-                    <div className="flex items-center justify-center gap-4 text-[#64748b]">
-                        <div className="flex items-center gap-2">
-                            <span className="text-4xl font-bold text-[#0a1628]">4.9</span>
-                            <div className="flex gap-1">
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className="w-6 h-6 fill-[#ffc107] text-[#ffc107]" />
-                                ))}
-                            </div>
-                        </div>
-                        <div className="text-left">
-                            <p className="font-medium">Based on 3,987 real stories</p>
-                            <p className="text-sm">from people whose lives we’ve touched</p>
-                        </div>
-                    </div>
+                    <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
+                        Hear directly from community leaders, Trust officials, and partners on the impact of EHCDT's work.
+                    </p>
                 </motion.div>
 
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
@@ -160,20 +132,14 @@ export default function Testimonials() {
                                             <Quote size={48} />
                                         </div>
 
-                                        <div className="flex gap-1 mb-6">
-                                            {[...Array(testimonial.stars)].map((_, i) => (
-                                                <Star key={i} className="w-5 h-5 fill-[#ffc107] text-[#ffc107]" />
-                                            ))}
-                                        </div>
-
                                         <p className="text-[#64748b] leading-relaxed text-[15.5px] flex-grow">
-                                            “{testimonial.quote}”
+                                            {testimonial.quote}
                                         </p>
 
                                         <div className="mt-8 flex items-center justify-between">
                                             <div>
                                                 <p className="font-semibold text-[#0a1628]">{testimonial.name}</p>
-                                                <p className="text-xs text-[#64748b]">{testimonial.date}</p>
+                                                <p className="text-sm text-[#64748b]">{testimonial.role}</p>
                                             </div>
                                         </div>
                                     </div>

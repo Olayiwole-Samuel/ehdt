@@ -92,12 +92,20 @@ export default function Mission() {
                             <div className="w-12 h-1 bg-[#0d47a1] rounded-full" />
                         </div>
 
-                        {/* Refined Descriptive Body Copy */}
+                        {/* NEW MISSION STATEMENT */}
                         <motion.p
                             variants={itemVariants}
                             className="text-base sm:text-lg text-[#64748b] font-normal leading-relaxed text-justify"
                         >
-                            To manage and administer funds contributed by Frontier Oil Limited (FOL) and Savannah Uquo Gas Limited (SEUGL) for the benefit and sustainable development of the <strong>Ekid</strong> host communities in Eket and Esit Eket Local Government Areas. We are committed to the active participation of host communities in all initiatives, ensuring that development is community-driven and aligned with the 5-year Community Development Plan (CDP). The Trust operates four dedicated accounts — <strong>Collection Fund, Capital Fund, Reserved Fund, and Administrative Cost</strong> — to ensure transparent and effective fund management.
+                            To improve the quality of life in our host communities by promoting sustainable development, empowering people, investing in critical infrastructure and social services, and managing community resources with transparency, accountability, and inclusiveness.
+                        </motion.p>
+
+                        {/* Contextual Details (Kept from your original file to retain the 4 accounts & structure) */}
+                        <motion.p
+                            variants={itemVariants}
+                            className="text-base sm:text-lg text-[#64748b] font-normal leading-relaxed text-justify"
+                        >
+                            The Trust operates four dedicated accounts — <strong>Collection Fund, Capital Fund, Reserved Fund, and Administrative Cost</strong> — to ensure transparent and effective fund management.
                         </motion.p>
 
                         {/* Interactive Premium Checklist */}

@@ -29,11 +29,11 @@ export default function Navbar() {
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
+    // Only Home, About, Members are in the array
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
         { href: '/members', label: 'Members' },
-        { href: '/contact', label: 'Contact' },
     ]
 
     const activitiesLinks = [
@@ -88,6 +88,7 @@ export default function Navbar() {
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center bg-black/20 backdrop-blur-md rounded-full p-1.5 border border-white/5 relative">
+                            {/* Mapped Links (Home, About, Members) */}
                             {navLinks.map((link) => {
                                 const isActive = activeLink === link.label
                                 return (
@@ -149,6 +150,26 @@ export default function Navbar() {
                                     )}
                                 </AnimatePresence>
                             </div>
+
+                            {/* Manual Contact Link (Desktop) */}
+                            <Link
+                                href="/contact"
+                                onClick={() => setActiveLink('Contact')}
+                                className={`relative px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-colors duration-300 z-10 ${
+                                    activeLink === 'Contact'
+                                        ? 'text-brand-primary'
+                                        : 'text-gray-300 hover:text-white'
+                                }`}
+                            >
+                                {activeLink === 'Contact' && (
+                                    <motion.span
+                                        layoutId="activePill"
+                                        className="absolute inset-0 bg-white rounded-full -z-10 shadow-[0_2px_10px_rgba(255,255,255,0.15)]"
+                                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                                    />
+                                )}
+                                Contact
+                            </Link>
                         </div>
 
                         {/* CTA & Mobile Toggle */}
@@ -194,6 +215,7 @@ export default function Navbar() {
                             animate="show"
                             className="flex flex-col gap-4"
                         >
+                            {/* Mapped Links (Home, About, Members) */}
                             {navLinks.map((link) => {
                                 const isActive = activeLink === link.label
                                 return (
@@ -217,7 +239,7 @@ export default function Navbar() {
                                 )
                             })}
 
-                            {/* Mobile Activities Section */}
+                            {/* Activities (Mobile) */}
                             <div className="pt-4">
                                 <p className="text-gray-400 text-sm font-semibold mb-2">Activities</p>
                                 {activitiesLinks.map((link, index) => (
@@ -230,6 +252,20 @@ export default function Navbar() {
                                         {link.label}
                                     </Link>
                                 ))}
+                            </div>
+
+                            {/* Manual Contact Link (Mobile) */}
+                            <div className="pt-4">
+                                <Link
+                                    href="/contact"
+                                    onClick={() => {
+                                        setActiveLink('Contact')
+                                        setIsMobileMenuOpen(false)
+                                    }}
+                                    className="block py-2 text-gray-300 hover:text-white transition-colors"
+                                >
+                                    Contact
+                                </Link>
                             </div>
                         </motion.div>
 
