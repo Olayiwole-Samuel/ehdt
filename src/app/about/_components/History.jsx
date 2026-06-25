@@ -33,7 +33,7 @@ export default function History() {
                         {/* Main Front Image */}
                         <div className="absolute inset-0 w-[85%] h-[85%] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)] z-10 group">
                             <Image
-                                src="/moment.jpg"
+                                src="/group.png"
                                 alt="EHCDT History"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-700"
