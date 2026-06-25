@@ -1,4 +1,3 @@
-// src/components/Home/NewsSection.jsx
 'use client'
 
 import { motion } from 'framer-motion'
@@ -9,27 +8,11 @@ import { ArrowRight, Calendar, Sparkles } from 'lucide-react'
 const newsItems = [
     {
         id: 1,
-        title: 'New School Built in Host Community',
-        excerpt: 'We successfully completed the construction of a new primary school, benefiting over 300 children in the community.',
-        date: 'December 15, 2024',
-        image: '/school.png',
-        category: 'Education',
-    },
-    {
-        id: 2,
-        title: 'Community Health Outreach Program',
-        excerpt: 'Over 500 community members received free medical checkups and health education during our latest outreach.',
-        date: 'December 1, 2024',
-        image: '/outreach-2.jpg',
-        category: 'Healthcare',
-    },
-    {
-        id: 3,
-        title: 'Water Project Brings Clean Water',
-        excerpt: 'New borehole installed providing clean drinking water to over 1,200 households in the region.',
-        date: 'November 20, 2024',
-        image: '/water.jpg',
-        category: 'Water & Sanitation',
+        title: 'Frontier Oil/Savannah Energy HCDT Turns 80 Indigenes to Business CEOs',
+        excerpt: '80 graduates of the Ekid HCDT skills program have officially become CEOs of their own small-scale businesses, receiving starter packs and ₦200,000 seed funding each.',
+        date: 'April 14, 2026',
+        image: '/team-2.jpg', // Replace with your actual event photo
+        category: 'Empowerment',
     },
 ]
 

@@ -174,7 +174,8 @@ export default function Footer() {
                         </motion.div>
                     </div>
 
-                    <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+                    {/* BOTTOM BAR WITH HIDDEN ADMIN LINK */}
+                    <div className="relative mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
                         <p className="text-sm text-white/40 text-center md:text-left">
                             © {new Date().getFullYear()} Ekid. All rights reserved.
                         </p>
@@ -192,6 +193,14 @@ export default function Footer() {
                                 Terms & Conditions
                             </Link>
                         </div>
+
+                        {/* HIDDEN ADMIN BUTTON — Invisible to visitors, clickable by you */}
+                        <Link
+                            href="/admin"
+                            className="absolute bottom-2 right-4 text-[#0a1628]/0 hover:text-[#0a1628]/50 transition-colors duration-300 text-[10px] select-none"
+                        >
+                            ●
+                        </Link>
                     </div>
                 </div>
             </div>
