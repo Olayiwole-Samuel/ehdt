@@ -52,12 +52,12 @@ const memberGroups = [
                 email: 'nelly@ehcdt.org',
             },
             {
-                name: 'Chief Barr. Bassey Essien',
+                name: 'Mr. Etukudo Albert',
                 role: 'Member',
-                bio: 'Principal Partner at Bassey Essien & Co. and MD/CEO of Atlantic Imperial group of companies. Former Speaker of the Akwa Ibom State House of Assembly (1999). Pioneered constituency projects in Nigeria. A lawyer with over 33 years post-call experience. Passionate about education and youth development.',
-                image: '/bassey.png',
+                bio: 'Seasoned human resources and community relations professional with over 18 years experience in stakeholder engagement, personnel management, and sustainable community development within Nigeria\'s oil and gas industry. Holds a Master\'s Degree in Business Management from the University of Calabar. Previously served as Personnel Manager with Chicago Bridge & Iron Company and Community Relations Coordinator with Saipem Contracting Nigeria Limited. Chaired the Uquo Field Marginal Implementation Committee (UFMIC) before its transition to EHCDT. Widely recognized for his integrity, collaborative leadership, and commitment to sustainable community advancement.',
+                image: '/albert.png',
                 linkedin: '#',
-                email: 'bassey@ehcdt.org',
+                email: 'etukudo@ehcdt.org',
             },
             {
                 name: 'Pastor Ita Umo Udoh',
@@ -87,7 +87,7 @@ const memberGroups = [
                 name: 'Mr. Sam Atara',
                 role: 'Secretary',
                 bio: 'Secretary to the Board of Trustees, representing Frontier Oil Limited (FOL). Head of Government and Community Relations at Frontier Oil Limited with over 18 years of experience in stakeholder engagement, sustainable development, and community affairs. Holds B.Sc. in Biochemistry and M.Sc. in Biology from the University of Uyo.',
-                image: '/sama.png',
+                image: '/sam.jpg',
                 linkedin: '#',
                 email: 'sam@ehcdt.org',
             },
@@ -356,7 +356,7 @@ export default function MembersPage() {
                                             <div className="absolute top-0 right-0 w-40 h-40 bg-[#ffc107]/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                             {/* Image */}
-                                            <div className="relative h-80 overflow-hidden">
+                                            <div className="relative h-80 overflow-hidden bg-[#f8fafc]">
                                                 <Image
                                                     src={member.image}
                                                     alt={member.name}
