@@ -250,7 +250,7 @@ export default function MembersPage() {
                             {[
                                 {
                                     label: 'Board of Trustees',
-                                    value: '7',
+                                    value: '8',
                                     icon: Users,
                                 },
                                 {
