@@ -95,7 +95,7 @@ const memberGroups = [
                 name: 'Mr. Sam Atara',
                 role: 'Secretary',
                 bio: 'Secretary to the Board of Trustees, representing Frontier Oil Limited (FOL). Head of Government and Community Relations at Frontier Oil Limited with over 18 years of experience in stakeholder engagement, sustainable development, and community affairs. Holds B.Sc. in Biochemistry and M.Sc. in Biology from the University of Uyo.',
-                image: '/sam.jpg',
+                image: '/sama.png',
                 linkedin: '#',
                 email: 'sam@ehcdt.org',
             },
