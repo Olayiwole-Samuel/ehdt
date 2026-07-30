@@ -54,10 +54,18 @@ const memberGroups = [
             {
                 name: 'Mr. Etukudo Albert',
                 role: 'Member',
-                bio: 'Seasoned human resources and community relations professional with over 18 years experience in stakeholder engagement, personnel management, and sustainable community development within Nigeria\'s oil and gas industry. Holds a Master\'s Degree in Business Management from the University of Calabar. Previously served as Personnel Manager with Chicago Bridge & Iron Company and Community Relations Coordinator with Saipem Contracting Nigeria Limited. Chaired the Uquo Field Marginal Implementation Committee (UFMIC) before its transition to EHCDT. Widely recognized for his integrity, collaborative leadership, and commitment to sustainable community advancement.',
+                bio: 'Seasoned HR and community relations professional with 18+ years in the oil and gas industry. Holds a Master\'s in Business Management. Former Personnel Manager at Chicago Bridge & Iron and Community Relations Coordinator at Saipem. Ex-Chairman of the Uquo Field Marginal Implementation Committee (UFMIC). Passionate about youth empowerment, education, and peacebuilding.',
                 image: '/albert.png',
                 linkedin: '#',
                 email: 'etukudo@ehcdt.org',
+            },
+            {
+                name: 'Chief Barr. Bassey Essien',
+                role: 'Member',
+                bio: 'Principal Partner at Bassey Essien & Co. and MD/CEO of Atlantic Imperial group of companies. Former Speaker of the Akwa Ibom State House of Assembly (1999). Pioneered constituency projects in Nigeria. A lawyer with over 33 years post-call experience. Passionate about education and youth development.',
+                image: '/bassey.png',
+                linkedin: '#',
+                email: 'bassey@ehcdt.org',
             },
             {
                 name: 'Pastor Ita Umo Udoh',
@@ -356,7 +364,7 @@ export default function MembersPage() {
                                             <div className="absolute top-0 right-0 w-40 h-40 bg-[#ffc107]/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                             {/* Image */}
-                                            <div className="relative h-80 overflow-hidden bg-[#f8fafc]">
+                                            <div className="relative h-80 overflow-hidden">
                                                 <Image
                                                     src={member.image}
                                                     alt={member.name}
